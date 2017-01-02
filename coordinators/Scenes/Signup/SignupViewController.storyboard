@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01G-Om-2r6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signup View Controller-->
+        <scene sceneID="P00-ZF-dYv">
+            <objects>
+                <viewController id="01G-Om-2r6" customClass="SignupViewController" customModule="coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OjN-nk-bw5"/>
+                        <viewControllerLayoutGuide type="bottom" id="6E2-nk-nSL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cWc-lq-QbS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-KL-z8B">
+                                <rect key="frame" x="163" y="319" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelTapped:" destination="01G-Om-2r6" eventType="touchUpInside" id="csh-gx-5Zo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signup is not implemented. The purpose of this part of the app is to show the handling of a child coordinator." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVJ-Xc-tUe">
+                                <rect key="frame" x="16" y="40" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WVJ-Xc-tUe" firstAttribute="centerX" secondItem="cWc-lq-QbS" secondAttribute="centerX" id="HAL-3p-rcc"/>
+                            <constraint firstItem="1EP-KL-z8B" firstAttribute="centerY" secondItem="cWc-lq-QbS" secondAttribute="centerY" id="K2P-lm-e2T"/>
+                            <constraint firstItem="1EP-KL-z8B" firstAttribute="centerX" secondItem="cWc-lq-QbS" secondAttribute="centerX" id="Pw1-GD-zRq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WVJ-Xc-tUe" secondAttribute="trailing" id="f06-Sv-LYg"/>
+                            <constraint firstItem="WVJ-Xc-tUe" firstAttribute="leading" secondItem="cWc-lq-QbS" secondAttribute="leadingMargin" id="iTc-FN-Pje"/>
+                            <constraint firstItem="WVJ-Xc-tUe" firstAttribute="top" secondItem="OjN-nk-bw5" secondAttribute="bottom" constant="20" id="kEj-1Q-2Mh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckl-qJ-6XI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="110"/>
+        </scene>
+    </scenes>
+</document>

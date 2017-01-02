@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rgm-5M-PqL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Init View Controller-->
+        <scene sceneID="84S-Jr-iPu">
+            <objects>
+                <viewController id="rgm-5M-PqL" customClass="InitViewController" customModule="coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4PY-TN-hzT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ahK-tq-qhY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fyw-Vn-0Ty">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4yB-2V-ejp">
+                                <rect key="frame" x="177.5" y="323" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sK-Bt-G8r">
+                                <rect key="frame" x="149" y="258" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4yB-2V-ejp" firstAttribute="top" secondItem="6sK-Bt-G8r" secondAttribute="bottom" constant="44" id="DvO-9h-HSg"/>
+                            <constraint firstItem="6sK-Bt-G8r" firstAttribute="centerX" secondItem="Fyw-Vn-0Ty" secondAttribute="centerX" id="KG8-jH-3aa"/>
+                            <constraint firstItem="4yB-2V-ejp" firstAttribute="centerY" secondItem="Fyw-Vn-0Ty" secondAttribute="centerY" id="Kkd-3c-KOa"/>
+                            <constraint firstItem="4yB-2V-ejp" firstAttribute="centerX" secondItem="Fyw-Vn-0Ty" secondAttribute="centerX" id="NIS-Wc-2HT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCf-Xs-4Mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-161" y="123"/>
+        </scene>
+    </scenes>
+</document>
